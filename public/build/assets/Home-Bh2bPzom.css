@@ -1,0 +1,1 @@
+@keyframes scroll{0%{transform:translate(10%)}50%{transform:translate(-200%)}to{transform:translate(0)}}.scroll-animation{animation:scroll 50s linear infinite}
