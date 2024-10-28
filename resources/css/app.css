@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* resources/css/app.css */
+
+/* Import Ambit font with different weights */
+
+
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Medium.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Import Ambit font with different weights */
+@font-face {
+    font-family: 'Ambit';
+    src: url('/fonts/Ambit-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ambit';
+    src: url('/fonts/Ambit-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ambit';
+    src: url('/fonts/Ambit-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ambit';
+    src: url('/fonts/Ambit-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/* Apply Satoshi as the default font */
+body {
+    font-family: 'Satoshi', sans-serif;
+
+}
+
+/* Custom class for headers to use Ambit font */
+.header-font {
+    font-family: 'Ambit', sans-serif;
+}

@@ -1,0 +1,15 @@
+@keyframes scroll {
+    0% {
+        transform: translateX(10%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.scroll-animation {
+    animation: scroll 50s linear infinite;
+}
