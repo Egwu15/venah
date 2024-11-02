@@ -1,20 +1,23 @@
 import React, { useCallback } from "react";
 
 function ContactCard1({ nextPage, data, setCheckedItems }) {
-
-
     const handleCheckboxChange = useCallback((event) => {
         const { name, checked } = event.target;
 
         let arrValue = [];
+        arrValue = data.checkedItems;
+        if (checked && !data.checkedItems.includes(name)) {
+            arrValue.push(name);
 
-        if (checked) {
-            arrValue = [...data.checkedItems, name];
-        } else {
-            arrValue = data.checkedItems.filter((item) => item !== name);
+            setCheckedItems("checkedItems", arrValue);
+            return;
         }
 
-        setCheckedItems("checkedItems", arrValue);
+        const index = data.checkedItems.indexOf(name);
+        if (index !== -1) {
+            arrValue.splice(index, 1);
+            setCheckedItems("checkedItems", arrValue);
+        }
     }, []);
 
     return (
@@ -35,7 +38,7 @@ function ContactCard1({ nextPage, data, setCheckedItems }) {
                             Array.isArray(data.checkedItems) &&
                             data.checkedItems.includes("Brand Design")
                         }
-                        className="checkbox rounded-sm bg-transparent outline outline-1 outline-black border-black"
+                        className="checkbox rounded-sm bg-transparent outline border-black outline-1 outline-black [--chkbg:theme(colors.black)] [--chkfg:black]"
                     />
 
                     <span className="label-text pl-4 text-[#020306] text-2xl">
@@ -51,7 +54,7 @@ function ContactCard1({ nextPage, data, setCheckedItems }) {
                         }
                         name="Product Design"
                         onChange={handleCheckboxChange}
-                        className="checkbox rounded-sm bg-transparent outline outline-1 outline-black border-black"
+                        className="checkbox rounded-sm bg-transparent outline border-black outline-1 outline-black [--chkbg:theme(colors.black)] [--chkfg:black]"
                     />
 
                     <span className="label-text pl-4 text-[#020306] text-2xl">
@@ -69,7 +72,7 @@ function ContactCard1({ nextPage, data, setCheckedItems }) {
                                 "Web & Mobile Development"
                             )
                         }
-                        className="checkbox rounded-sm bg-transparent outline outline-1 outline-black border-black"
+                        className="checkbox rounded-sm bg-transparent outline border-black outline-1 outline-black [--chkbg:theme(colors.black)] [--chkfg:black]"
                     />
 
                     <span className="label-text pl-4 text-[#020306] text-2xl">
@@ -80,7 +83,7 @@ function ContactCard1({ nextPage, data, setCheckedItems }) {
 
             <div className="flex justify-end">
                 <button
-                    className="btn rounded-full px-7 text-white text-xl"
+                    className="btn rounded-full px-7 text-white text-xl "
                     onClick={() => nextPage((prev) => prev + 1)}
                 >
                     Next

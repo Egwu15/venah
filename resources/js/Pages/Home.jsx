@@ -45,7 +45,10 @@ function Home() {
                 </Link>
             </div>
             <Carousel />
-            <section id="ourWork" className="text-balance text-black bg-[#F4E8D7]">
+            <section
+                id="ourWork"
+                className="text-balance text-black bg-[#F4E8D7]"
+            >
                 <div className="text-center py-20 sm:max-w-4xl mx-auto">
                     <h2 className="font-bold  font-header text-4xl">
                         Our Works
@@ -54,9 +57,15 @@ function Home() {
 
                 <div className="flex justify-center px-6 py-10">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-9 ">
-                        <img src={seapers} className="pb-10  md:-translate-y-20" />
+                        <img
+                            src={seapers}
+                            className="pb-10  md:-translate-y-20"
+                        />
                         <img src={normad_pay} className="pb-10 " />
-                        <img src={xRide} className="pb-10  md:-translate-y-20" />
+                        <img
+                            src={xRide}
+                            className="pb-10  md:-translate-y-20"
+                        />
                         <img src={nms} className="pb-10 " />
                     </div>
                 </div>
@@ -97,10 +106,12 @@ function Home() {
                     <h2 className="font-bold  font-header text-4xl">
                         The Team
                     </h2>
-                    <p className=" mt-6 text-xl ">
-                        We are a leading digital product agency with ideas that
-                        are out of the box. We focus on ui/ux design, mobile and
-                        web development.
+                    <p className=" mt-6 text-xl text-balance">
+                        We are a team of creative people with a passion for
+                        impactful digital experience. For us, every project is a
+                        partnership and an opportunity to to bring our clients
+                        visions to life in ways that excite their users and
+                        deliver real value.
                     </p>
                 </div>
 

@@ -83,13 +83,13 @@ function ContactCard2({ back, setData, data, next }) {
             <div className="pt-20 flex justify-between">
                 <button
                     onClick={() => back()}
-                    className="btn btn-outline rounded-full px-7 text-lg"
+                    className="btn btn-outline border-black text-black rounded-full px-7 text-lg hover:bg-black hover:text-white"
                 >
                     Back
                 </button>
                 <button
                     onClick={handleNext}
-                    className="btn rounded-full px-7 text-lg"
+                    className="btn rounded-full px-7 text-lg text-white hover:bg-transparent hover:text-black"
                 >
                     Next
                 </button>
