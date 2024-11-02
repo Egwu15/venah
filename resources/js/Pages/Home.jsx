@@ -76,9 +76,11 @@ function Home() {
                         Our Values
                     </h1>
                     <p className=" mt-6 text-xl text-balance">
-                        We are a leading digital product agency with ideas that
-                        are out of the box. We focus on ui/ux design, mobile and
-                        web development.
+                        We are a team of problem solvers with a passion for
+                        building impactful digital experiences. For us, every
+                        project is a partnership and an opportunity to bring our
+                        clients visions to life in ways that excite their users
+                        and deliver real value.
                     </p>
                 </div>
 
