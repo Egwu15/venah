@@ -4,8 +4,8 @@ import Guest from "@/Layouts/GuestLayout";
 import { Head, Link } from "@inertiajs/react";
 import normad_pay from "../../images/nomad_pay.png";
 import seapers from "../../images/seapers.png";
-import seapers2 from "../../images/seapers2.png";
-import xRide from "../../images/x-ride.png";
+import xRide from "../../images/xRide.png";
+import nms from "../../images/nms.png";
 import ValueCard from "@/Components/ValueCard";
 import bulb from "../../images/icons/bulb.svg";
 import hexicon from "../../images/icons/hexicon.svg";
@@ -53,11 +53,11 @@ function Home() {
                 </div>
 
                 <div className="flex justify-center px-6 py-10">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-9 ">
-                        <img src={seapers} class="pb-10  md:-translate-y-20" />
-                        <img src={normad_pay} class="pb-10 " />
-                        <img src={xRide} class="pb-10  md:-translate-y-20" />
-                        <img src={seapers2} class="pb-10 " />
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-9 ">
+                        <img src={seapers} className="pb-10  md:-translate-y-20" />
+                        <img src={normad_pay} className="pb-10 " />
+                        <img src={xRide} className="pb-10  md:-translate-y-20" />
+                        <img src={nms} className="pb-10 " />
                     </div>
                 </div>
             </section>
@@ -73,7 +73,7 @@ function Home() {
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 px-16 gap-14 pt-20">
+                <div className="grid grid-cols-1 md:grid-cols-3 px-16 gap-14 pt-20">
                     <ValueCard
                         icon={bulb}
                         title="Innovation and Quality"
@@ -105,7 +105,7 @@ function Home() {
                 </div>
 
                 <div className="flex justify-center px-6 py-10 ">
-                    <div class="md:flex gap-10 mx-a">
+                    <div className="md:flex gap-10 mx-a">
                         <TestimonialCard
                             image={team1}
                             title="Charles Oloyede"

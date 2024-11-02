@@ -1,9 +1,11 @@
 import ApplicationLogo from "@/Components/ApplicationLogo";
 import { Link } from "@inertiajs/react";
-import RoundedButton from "@/Components/button/RoundedButton";
 import x from "../../images/icons/x.png";
 import linkden from "../../images/icons/linkden.png";
 import instagram from "../../images/icons/instagram.png";
+import ContactFormMain from "@/Components/bottomForm/ContactFormMain";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Guest({
     children,
@@ -14,6 +16,7 @@ export default function Guest({
         <div
             className={`flex flex-col items-center  pt-6 sm:justify-center sm:pt-0 ${headerColor} `}
         >
+            <ToastContainer />
             <div
                 className={`mt-6 w-full overflow-hidden px-6 py-4 shadow-md sm:max-w-md md:max-w-[50%] rounded-full bg-[#1D1E20] flex justify-between items-center`}
             >
@@ -33,7 +36,6 @@ export default function Guest({
                     </button>
                 </Link>
             </div>
-
             <div className="mt-6 w-full overflow-hidden py-4 shadow-md ">
                 {children}
             </div>
@@ -41,12 +43,14 @@ export default function Guest({
                 id="talk"
                 className="text-center py-20  mx-auto px-6 w-full text-white"
             >
-                <h1 className=" font-bold md:text-6xl font-header text-5xl sm:max-w-4xl mx-auto">
-                    Ready to shape the future of the world?
-                </h1>
-                <RoundedButton>
-                    <p>Lets Talk</p>
-                </RoundedButton>
+                <div className="md:flex md:px-20">
+                    <h1 className=" font-bold md:text-6xl font-header text-start text-5xl w-full">
+                        Ready to shape the future of the world?
+                    </h1>
+
+                    <ContactFormMain />
+                </div>
+                {/* underline */}
                 <hr className="md:mx-20 mt-20 mb-16" />
                 <div className="md:flex justify-between items-center md:mx-20">
                     <div>
