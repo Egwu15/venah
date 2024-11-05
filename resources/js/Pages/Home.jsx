@@ -39,7 +39,7 @@ function Home() {
                 </p>
 
                 <Link href="#talk">
-                    <RoundedButton>
+                    <RoundedButton fontWight="text-xl">
                         <p>Lets Talk</p>
                     </RoundedButton>
                 </Link>
@@ -76,29 +76,28 @@ function Home() {
                         Our Values
                     </h1>
                     <p className=" mt-6 text-xl text-balance">
-                        We are a team of problem solvers with a passion for
-                        building impactful digital experiences. For us, every
-                        project is a partnership and an opportunity to bring our
-                        clients visions to life in ways that excite their users
-                        and deliver real value.
+                        At Venah, our values guide every project, every idea,
+                        and every partnership we build. They define who we are,
+                        how we work, and what we deliver. Here’s what we stand
+                        for:
                     </p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 px-16 gap-14 pt-20">
                     <ValueCard
                         icon={bulb}
-                        title="Innovation and Quality"
-                        description="We push the boundaries of what's possible in digital design and development whilst delivering the highest quality work."
+                        title="Partnership"
+                        description="We believe great digital experiences come from collaboration. By treating each project as a partnership, we listen, adapt, and bring our clients’ visions to life. Together, we build relationships based on trust, transparency, and shared goals."
                     />
                     <ValueCard
                         icon={hexicon}
-                        title="Integrity"
-                        description="We conduct our business with honesty and transparency, building trust through every interaction"
+                        title="Innovation & Quality"
+                        description="We’re driven by a passion for innovation and a commitment to excellence. We push boundaries to create impactful designs and solutions that stand out and endure. Quality is never compromised; we take pride in delivering work that’s both creative and reliable."
                     />
                     <ValueCard
                         icon={smile}
-                        title="User centric"
-                        description="We prioritize the needs and experiences of users, ensuring that our solutions are intuitive and engaging."
+                        title="User-Centric"
+                        description="Every experience we create starts with the user. We deeply understand users' needs and behaviors to design products that not only engage but also delight. By putting the user at the heart of our process, we help our clients connect meaningfully with their audiences."
                     />
                 </div>
             </section>

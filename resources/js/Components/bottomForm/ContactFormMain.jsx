@@ -28,8 +28,7 @@ function ContactFormMain() {
             },
             onError: (err) => toast.error("unable to send message"),
         });
-        // setData("checkedItems", data.checkedItems.toString());
-        // setData("aboutBusiness", data.aboutBusiness);
+        
     };
 
     return (

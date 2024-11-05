@@ -16,7 +16,11 @@ use Inertia\Inertia;
 // });
 
 Route::get('/', function () {
-    return Inertia::render('Home');
+    return Inertia::render('Home',);
+});
+
+Route::get('/work', function () {
+    return Inertia::render('work',);
 });
 
 // Route::get('/dashboard', function () {

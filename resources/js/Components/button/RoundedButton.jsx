@@ -11,7 +11,7 @@ function RoundedButton({
     return (
         <button
             onClick={() => onclick()}
-            className={`${bgColor} ${textColor} ${hoverColor} ${fontWight} rounded-full px-5 py-1 my-4 font-medium hover:bg-transparent hover:text-white hover:outline outline-white`}
+            className={`${bgColor} ${textColor} ${hoverColor} ${fontWight} font-header rounded-full px-5 py-1 my-4 font-semibold hover:bg-transparent hover:text-white hover:outline outline-white`}
         >
             {children}
         </button>

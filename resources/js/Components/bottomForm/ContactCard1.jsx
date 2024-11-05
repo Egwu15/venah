@@ -83,7 +83,7 @@ function ContactCard1({ nextPage, data, setCheckedItems }) {
 
             <div className="flex justify-end">
                 <button
-                    className="btn rounded-full px-7 text-white text-xl "
+                    className="btn rounded-full px-7 text-white text-xl font-semibold font-header"
                     onClick={() => nextPage((prev) => prev + 1)}
                 >
                     Next

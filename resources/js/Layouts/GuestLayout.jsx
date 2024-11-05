@@ -31,7 +31,7 @@ export default function Guest({
                     <h2 className="text-white">About Us</h2>
                 </Link>
                 <Link href="#ourWork">
-                    <button className="bg-white px-3 py-2 rounded-full text-black">
+                    <button className="bg-white px-3 py-2 rounded-full text-black font-header font-semibold">
                         Explore our work
                     </button>
                 </Link>
@@ -41,7 +41,7 @@ export default function Guest({
             </div>
             <footer
                 id="talk"
-                className="text-center py-20  mx-auto px-6 w-full text-white"
+                className="text-center py-20  mx-auto px-6 w-full text-white bg-[#020306]"
             >
                 <div className="md:flex md:px-20">
                     <h1 className=" font-bold md:text-6xl font-header text-start text-5xl w-full">

@@ -11,7 +11,7 @@ use Inertia\Inertia;
 
 class ContactController extends Controller
 {
-    public function store(Request $request)
+    public function store(Request $request): void
     {
         $validatedData =  $request->validate([
             'name' => ['required', 'string', 'max:255'],
@@ -20,7 +20,7 @@ class ContactController extends Controller
             'aboutBusiness' => ['nullable', 'string']
         ]);
 
-        $validatedData['checkedItems'] = implode(',', $validatedData['checkedItems']);
+        $validatedData['checkedItems'] = implode(' , ', $validatedData['checkedItems']);
 
         Contact::create($validatedData);
     }
