@@ -8,7 +8,7 @@ import xRide from "../../images/xRide.png";
 import nms from "../../images/nms.png";
 import ValueCard from "@/Components/ValueCard";
 import bulb from "../../images/icons/bulb.svg";
-import hexicon from "../../images/icons/hexicon.svg";
+import hexIcon from "../../images/icons/hexicon.svg";
 import smile from "../../images/icons/smile.svg";
 import TestimonialCard from "@/Components/TestimonialCard";
 import team1 from "../../images/team1.png";
@@ -23,8 +23,7 @@ function Home() {
                 <title>Home</title>
                 <meta
                     name="Home"
-                    content="Transforming Ideas into Innovative Digital Solutions
-"
+                    content="Transforming Ideas into Innovative Digital Solutions"
                 />
             </Head>
             <div className="text-center py-20 sm:max-w-4xl mx-auto px-6">
@@ -90,7 +89,7 @@ function Home() {
                         description="We believe great digital experiences come from collaboration. By treating each project as a partnership, we listen, adapt, and bring our clients’ visions to life. Together, we build relationships based on trust, transparency, and shared goals."
                     />
                     <ValueCard
-                        icon={hexicon}
+                        icon={hexIcon}
                         title="Innovation & Quality"
                         description="We’re driven by a passion for innovation and a commitment to excellence. We push boundaries to create impactful designs and solutions that stand out and endure. Quality is never compromised; we take pride in delivering work that’s both creative and reliable."
                     />

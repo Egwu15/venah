@@ -36,7 +36,7 @@ export default function Guest({
                     </button>
                 </Link>
             </div>
-            <div className="mt-6 w-full overflow-hidden py-4 shadow-md ">
+            <div className="mt-6 w-full overflow-hidden shadow-md">
                 {children}
             </div>
             <footer

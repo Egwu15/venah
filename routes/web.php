@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProjectController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -22,6 +23,8 @@ Route::get('/', function () {
 Route::get('/work', function () {
     return Inertia::render('work',);
 });
+
+Route::get('/project', [ProjectController::class, 'index']);
 
 // Route::get('/dashboard', function () {
 //     return Inertia::render('Dashboard');
