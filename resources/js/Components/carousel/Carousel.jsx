@@ -9,7 +9,7 @@ import CarouselItem from "./CarouselItem";
 import "./carousel.css";
 const Carousel = () => {
     return (
-        <div class="carousel mb-20" style={{ height: "30%" }}>
+        <div className="carousel mb-20" style={{ height: "30%" }}>
             <div className="flex scroll-animation">
                 <CarouselItem
                     image={services_image}

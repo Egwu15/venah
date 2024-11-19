@@ -20,9 +20,9 @@ Route::get('/', function () {
     return Inertia::render('Home',);
 });
 
-Route::get('/work', function () {
-    return Inertia::render('work',);
-});
+// Route::get('/work', function () {
+//     return Inertia::render('work',);
+// })
 
 Route::get('/project', [ProjectController::class, 'index']);
 

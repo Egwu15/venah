@@ -56,16 +56,24 @@ function Home() {
 
                 <div className="flex justify-center px-6 py-10">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-9 ">
-                        <img
-                            src={seapers}
-                            className="pb-10  md:-translate-y-20"
-                        />
-                        <img src={normad_pay} className="pb-10 " />
-                        <img
-                            src={xRide}
-                            className="pb-10  md:-translate-y-20"
-                        />
-                        <img src={nms} className="pb-10 " />
+                        <Link href="/project" data={{ project: "Seapers" }}>
+                            <img
+                                src={seapers}
+                                className="pb-10  md:-translate-y-20"
+                            />
+                        </Link>
+                        <Link href="/project" data={{ project: "NomadPay" }}>
+                            <img src={normad_pay} className="pb-10 " />
+                        </Link>
+                        <Link href="/project" data={{ project: "Xride" }}>
+                            <img
+                                src={xRide}
+                                className="pb-10  md:-translate-y-20"
+                            />
+                        </Link>
+                        <Link href="/project" data={{ project: "NMS" }}>
+                            <img src={nms} className="pb-10 " />
+                        </Link>
                     </div>
                 </div>
             </section>

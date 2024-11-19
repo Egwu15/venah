@@ -7,10 +7,9 @@ use Inertia\Inertia;
 
 class ProjectController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-
-
-        return  Inertia::render('project/Project');
+        $projectName = $request->input('project');
+        return  Inertia::render('project/Project', ['projectName' => $projectName]);
     }
 }
