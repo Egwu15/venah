@@ -1,13 +1,7 @@
 import React from "react";
 import Guest from "@/Layouts/GuestLayout";
-import { Head } from "@inertiajs/react";
-import seapars from "../../../images/Seapars-banner.png";
-import seaparsMobile1 from "../../../images/mobiles/seapers-mobile1.png";
-import seaparsMobile2 from "../../../images/mobiles/seapers-mobile2.png";
-import seaparsMobile3 from "../../../images/mobiles/seapers-mobile3.png";
-import normad_pay from "../../../images/nomad_pay.png";
-import xRide from "../../../images/xRide.png";
-import nms from "../../../images/nms.png";
+import { Head, Link } from "@inertiajs/react";
+
 import { projectContent } from "./project-details";
 
 function Project({ projectName }) {
@@ -30,7 +24,7 @@ function Project({ projectName }) {
                     </h1>
                 </div>
 
-                <div className="md:px-10 px-3">
+                <div className="flex justify-center md:px-10 px-3 ">
                     <img src={project.headImage} alt="business banger" />
                 </div>
 
@@ -55,7 +49,9 @@ function Project({ projectName }) {
                 <div className="w-full mt-4">
                     <div className="grid grid-row-3 grid-flow-col gap-4  mx-auto">
                         {project.otherWorks.map((e) => (
-                            <img src={e} className="pb-10 " />
+                            <Link href="/project" data={{ project: e.name }}>
+                                <img src={e.image} className="pb-10 " />
+                            </Link>
                         ))}
                     </div>
                 </div>

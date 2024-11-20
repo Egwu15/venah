@@ -27,10 +27,10 @@ export default function Guest({
                         "Add black Logo here"
                     )}
                 </Link>
-                <Link href="#aboutUs">
+                <Link href="/#aboutUs">
                     <h2 className="text-white">About Us</h2>
                 </Link>
-                <Link href="#ourWork">
+                <Link href="/#ourWork">
                     <button className="bg-white px-3 py-2 rounded-full text-black font-header font-semibold">
                         Explore our work
                     </button>
