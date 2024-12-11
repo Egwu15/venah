@@ -132,7 +132,7 @@ function Home() {
                         />
                         <TestimonialCard
                             image={mujedah}
-                            title="Charles Oloyede"
+                            title="Mujeedah Ashiru"
                             description="Product Design"
                         />
                         <TestimonialCard
