@@ -11,10 +11,10 @@ import bulb from "../../images/icons/bulb.svg";
 import hexIcon from "../../images/icons/hexicon.svg";
 import smile from "../../images/icons/smile.svg";
 import TestimonialCard from "@/Components/TestimonialCard";
-import team1 from "../../images/team1.png";
-import team2 from "../../images/team2.png";
-import team3 from "../../images/team3.png";
-import team4 from "../../images/team4.png";
+import abigal from "../../images/abigal.jpeg";
+import charles from "../../images/charles.jpeg";
+import mujedah from "../../images/mujedah.jpeg";
+import ted from "../../images/ted.jpeg";
 
 function Home() {
     return (
@@ -126,24 +126,24 @@ function Home() {
                 <div className="flex justify-center px-6 py-10 ">
                     <div className="md:flex gap-10 mx-a">
                         <TestimonialCard
-                            image={team1}
+                            image={charles}
                             title="Charles Oloyede"
-                            description="Product Owner"
+                            description="Product"
                         />
                         <TestimonialCard
-                            image={team2}
+                            image={mujedah}
                             title="Charles Oloyede"
-                            description="Brand Designer"
+                            description="Product Design"
                         />
                         <TestimonialCard
-                            image={team3}
-                            title="Charles Oloyede"
-                            description="Product Designer"
+                            image={ted}
+                            title="Ted Egwu"
+                            description="Software Engineering"
                         />
                         <TestimonialCard
-                            image={team4}
-                            title="Charles Oloyede"
-                            description="Full stack Developer"
+                            image={abigal}
+                            title="Abigael Adebayo"
+                            description="Business Development"
                         />
                     </div>
                 </div>
