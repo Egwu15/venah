@@ -123,7 +123,7 @@ function Home() {
                     </p>
                 </div>
 
-                <div className="flex justify-center px-6 py-10 ">
+                <div className="flex justify-center px-6 pb-10">
                     <div className="md:flex gap-10 mx-a">
                         <TestimonialCard
                             image={charles}
