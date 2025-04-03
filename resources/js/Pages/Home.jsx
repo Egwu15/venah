@@ -117,7 +117,7 @@ function Home() {
                     <p className=" mt-6 text-xl text-balance">
                         We are a team of creative people with a passion for
                         impactful digital experience. For us, every project is a
-                        partnership and an opportunity to to bring our clients
+                        partnership and an opportunity to bring our clients
                         visions to life in ways that excite their users and
                         deliver real value.
                     </p>
