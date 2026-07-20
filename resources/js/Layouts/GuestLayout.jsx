@@ -60,7 +60,8 @@ export default function Guest({
                         </p>
                     </div>
                     <p className=" mt-6 text-xl text-start">
-                        &copy; 2024 Venah All Rights Reserved
+                        &copy; @{new Date().getFullYear()} Venah All Rights
+                        Reserved
                     </p>
                     <div className="flex gap-4 justify-center mt-2 md:mt-0">
                         <img src={linkden} alt="linkden" />

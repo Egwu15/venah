@@ -140,11 +140,6 @@ function Home() {
                             title="Ted Egwu"
                             description="Software Engineering"
                         />
-                        <TestimonialCard
-                            image={abigal}
-                            title="Abigael Adebayo"
-                            description="Business Development"
-                        />
                     </div>
                 </div>
             </section>
